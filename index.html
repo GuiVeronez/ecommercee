@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Store</h1>
+            <nav>
+                <button id="toggle-carrinho">Carrinho (<span id="quantidade-itens">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="produtos" class="container">
+            <h2>Produtos em Destaque</h2>
+            <div class="grid">
+                <div class="card" data-id="1" data-nome="Smartphone X" data-preco="1500">
+                    <img src="https://images.pexels.com/photos/850360/pexels-photo-850360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smartphone X">
+                    <h3>Smartphone X</h3>
+                    <p>R$ 1.500,00</p>
+                    <button class="add-carrinho">Adicionar ao Carrinho</button>
+                </div>
+                <div class="card" data-id="2" data-nome="Fone Bluetooth" data-preco="200">
+                    <img src="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fone Bluetooth">
+                    <h3>Fone Bluetooth</h3>
+                    <p>R$ 200,00</p>
+                    <button class="add-carrinho">Adicionar ao Carrinho</button>
+                </div>
+                <div class="card" data-id="3" data-nome="Notebook Pro" data-preco="3500">
+                    <img src="https://media.istockphoto.com/id/986441534/pt/foto/nootbook-and-coffee-on-the-wood-destop-concept.jpg?s=2048x2048&w=is&k=20&c=SJcy-akOPM52j9tdIz9R_KyG2XaZOdbydBKSu2qn5JM=" alt="Notebook Pro">
+                    <h3>Notebook Pro</h3>
+                    <p>R$ 3.500,00</p>
+                    <button class="add-carrinho">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <aside id="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="itens-carrinho">
+                <p>Adicione itens para vê-los aqui.</p>
+            </ul>
+            <p id="total">Total: R$ 0,00</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Store - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
